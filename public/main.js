@@ -1,4 +1,5 @@
 let n = 1;
+//加载CSS
 getCSS.onclick=()=>{
     const request = new XMLHttpRequest();  
     request.open("GET","/style.css");
@@ -15,6 +16,7 @@ getCSS.onclick=()=>{
     };
     request.send();    
 };
+//加载JS
 getJS.onclick=()=>{
     const request = new XMLHttpRequest();  
     request.open("GET","/2.js");
@@ -31,6 +33,7 @@ getJS.onclick=()=>{
     };
     request.send();    
 };
+//加载HTML
 getHTML.onclick=()=>{
     const request = new XMLHttpRequest();  
     request.open("GET","/3.html");
@@ -47,6 +50,7 @@ getHTML.onclick=()=>{
     };
     request.send();
 };
+//加载XML
 getXML.onclick=()=>{
     const request = new XMLHttpRequest();  
     request.open("GET","/4.xml");
@@ -63,6 +67,7 @@ getXML.onclick=()=>{
     };
     request.send();
 };
+//加载JSON
 getJSON.onclick=()=>{
     const request = new XMLHttpRequest();  
     request.open("GET","/5.json");
@@ -77,6 +82,7 @@ getJSON.onclick=()=>{
     };
     request.send();
 };
+// 加载分页
 getPage.onclick=()=>{
     const request = new XMLHttpRequest(); 
     n+=1; 
